@@ -24,10 +24,16 @@ int main(int argc, const char * argv[]) {
 
         NSLog(@"Box1 has a volume of %f, Box 2 has a volume of %f", [box1 volume], [box2 volume]);
         
-        
-        if ([box1 volume ]) {
-            <#statements#>
+        if ([box1 volume]>[box2 volume]) {
+            NSLog(@"Box 1 is bigger than box 2");
+        }else{
+            NSLog(@"Box 2 is bigger than box 1");
         }
+        
+        
     }
-    return 0;
+    
+    
+        
+        return 0;
 }

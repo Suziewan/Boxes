@@ -14,9 +14,11 @@
 @property float width;
 @property float length;
 
+
 -(instancetype)initWithHeight:(float)height width:(float)width length:(float)length;
 
 -(float)volume;
+- (float)fitsInto:(Box*)otherBox;
 
 
 @end

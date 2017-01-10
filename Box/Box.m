@@ -21,9 +21,22 @@
     }
     return self;
 }
+
 -(float)volume
 {
     return self.height * self.width * self.length;
 }
+
+- (float)fitsInto:(Box*)otherBox
+{
+    return otherBox.volume / self.volume;
+}
+
+//I want to divide box 2 by box 1 and then write an if/else statement dependent on the result
+//How do i write the code to do that...
+
+
+
+
 
 @end
