@@ -13,6 +13,9 @@
 @property float height;
 @property float width;
 @property float length;
+@property float factor;
+@property Box *biggestBox;
+@property Box *smallestBox;
 
 
 -(instancetype)initWithHeight:(float)height width:(float)width length:(float)length;

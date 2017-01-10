@@ -29,7 +29,23 @@
 
 - (float)fitsInto:(Box*)otherBox
 {
-    return otherBox.volume / self.volume;
+    
+    self.factor = otherBox.volume / self.volume;
+    NSLog(@"The factor is %f", self.factor);
+    
+    if (self.factor > 1) {
+        self.biggestBox = otherBox;
+        self.smallestBox = self;
+    }else if (self.factor < 1) {
+        self.smallestBox = otherBox;
+        self.biggestBox = self; 
+    }
+    
+    
+    self.factor = self.biggestBox.volume / self.smallestBox.volume;
+    
+    return self.factor;
+    
 }
 
 //I want to divide box 2 by box 1 and then write an if/else statement dependent on the result
