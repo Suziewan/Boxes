@@ -23,6 +23,11 @@ int main(int argc, const char * argv[]) {
         box2.length = 20;
 
         NSLog(@"Box1 has a volume of %f, Box 2 has a volume of %f", [box1 volume], [box2 volume]);
+        
+        
+        if ([box1 volume ]) {
+            <#statements#>
+        }
     }
     return 0;
 }
