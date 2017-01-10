@@ -30,8 +30,6 @@ int main(int argc, const char * argv[]) {
             NSLog(@"Box 2 is bigger than box 1");
         }
         
-        
-    }
     
     
         
